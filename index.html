@@ -1,36 +1,905 @@
-<!DOCTYPE HTML>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название страницы</title>
-    <meta name="description" content="Описание страницы" />
-    
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="icon" href="/img/favicon.png">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <header>
-      Шапка
-      <nav>
-        Навигация
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>Заголовок страницы</h1>
-        Основная часть
-      </section>
-    </main>
-    <aside>
-      Боковая колонка (сайдбар)
-    </aside>
-    <footer>
-      Подвал
-    </footer>
-  </body>
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<title>Maxino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="description" content="Maxino is a personal portfolio HTML5 Maxino Template">
+ 	<meta name="keywords" content="Maxino, HTML5, portfolio, Template">
+ 	<meta name="author" content="CodexCoder">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/lightcase.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/icofont.min.css">
+	<link rel="shortcut icon" href="assets/css/favicon.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="shape-top"></div>
+	<div class="shape-bottom"></div>
+	<!-- mobile-nav section start here -->
+	<div class="mobile-menu">
+		<nav class="mobile-header d-xl-none">
+			<div class="header-logo">
+				<a href="index.html" class="logo"><img src="assets/images/logo/logo.png" alt="logo"></a>
+			</div>
+			<div class="header-bar" id="open-button">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </div>
+		</nav>
+		<div class="menu-wrap">
+			<div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+					<path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+				</svg>
+			</div>
+			<nav class="menu">
+				<div class="mobile-menu-area d-xl-none">
+			        <div class="mobile-menu-area-inner" id="scrollbar">
+		                <div class="header-bar m-menu-bar">
+		                    <a href="index.html" class="logo"><img src="assets/images/logo/logo.png" alt="logo"></a>
+		                    <div class="close-button" id="close-button"></div>
+		                </div>
+			            <ul class="m-menu">
+		                	<li><a href="#Banner">Наверх</a></li>
+							<li><a href="#About">Обо мне</a></li>
+							<li><a href="#Resume">Резюме</a></li>
+							<li><a href="#Services">Услуги</a></li>
+							<li><a href="#Portfolio">Мои работы</a></li>
+							<li><a href="#Pricing">Цены</a></li>
+							<li><a href="#Clients">Отзывы</a></li>
+							<li><a href="#Blog">Блог</a></li>
+							<li><a href="#Contact">Контакты</a></li>
+			            </ul>
+		                <ul class="social-link-list d-flex flex-wrap">
+		                    <li>
+								<a href="#"><i class="icofont-whatsapp"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icofont-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icofont-odnoklassniki"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icofont-skype"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icofont-vk"></i></a>
+							</li>
+		                </ul>
+			        </div>
+			    </div>
+			</nav>
+		</div>
+	</div>
+	<!-- mobile-nav section ending here -->
+
+	<!-- header section start here -->
+	<div class="header-section d-none d-xl-block">
+		<div class="header">
+			<nav class="primary-menu" id="navbar">
+				<div class="container">
+					<div class="menu-area">
+						<div class="row no-gutters justify-content-between align-items-center">
+							<div class="header-logo">
+								<a href="index.html" class="logo d-flex">
+									<img src="assets/images/logo/logo.png" alt="logo">
+									<h1>Lana<br>Vartanova</h1>
+								</a>
+							</div>
+							<ul class="main-menu d-flex">
+								<li class="active"><a href="#Banner">Наверх</a></li>
+								<li><a href="#About">Обо мне</a></li>
+								<li><a href="#Resume">Резюме</a></li>
+								<li><a href="#Services">Услуги</a></li>
+								<li><a href="#Portfolio">Мои работы</a></li>
+								<li><a href="#Pricing">Цены</a></li>
+								<li><a href="#Clients">Отзывы</a></li>
+								<li><a href="#Blog">Блог</a></li>
+								<li><a href="#Contact">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- header section ending here -->
+	<section class="banner" id="Banner">
+		<div class="banner-area">
+	        <div class="container">
+	        	<div class="section-wrapper banner-wrapper">
+		            <div class="row align-items-center">
+		                <div class="col-lg-6 col-12">
+		                    <div class="banner-content">
+								<h1>Здравствуйте...</h1>
+								<h1>Я <span>Светлана</span></h1>
+								<div class="dynamic-title cd-headline clip is-full-width">
+									<h1 class="cd-words-wrapper">
+										<b class="is-visible gold-title">Freelancer</b>
+										<b class="gold-title">UX Designer</b>
+										<b class="gold-title">Web Developer</b>
+										<b class="gold-title">Web Designer</b>
+									</h1>
+								</div>
+								
+							</div>
+		                </div>
+		                <div class="col-lg-6 col-12">
+		                    <div class="banner-thumb">
+		                        <img src="assets/images/banner/02.png" alt="banner" class="img-fluid">
+		                    </div>
+		                </div>
+		            </div>
+	            </div>
+	        </div>
+	    </div>
+    </section>
+
+    <!-- box lay out -->
+    <div class="box-shadow-style">
+		<section class="banner-bottom">
+			<div class="banner-bottom-pattan"></div>
+			<div class="container">
+				<div class="bottom-wrapper section-wrapper">
+					<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="post-thumb">
+							<i class="icon icofont-telegram"></i>
+						</div>
+						<div class="post-content">
+							<h5>Telegram</h5>
+							<h5><span>@lanavartanova</span></h5>
+						</div>
+					</div>
+					<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+						<div class="post-thumb">
+							<i class="icon icofont-ui-email"></i>
+						</div>
+						<div class="post-content">
+							<h5>E-mail</h5>
+							<h5><span>lanavartanova@mail.com</span></h5>
+						</div>
+					</div>
+					<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="post-thumb">
+							<i class="icon icofont-instagram"></i>
+						</div>
+						<div class="post-content">
+							<h5>Instagram</h5>
+							<h5><span>@lanaweb</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about padding-tb" id="About">
+			<div class="particles" id="particles-js"></div>
+			<div class="container">
+				<div class="section-wrapper">
+					<div class="about-left">
+						<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+							<h2 class="h3">Нужен стильный, оптимизированный сайт, в соответствии со всеми правилами юзабилити? <span>Обращайтесь.</span></h2>
+						</div>
+						<div class="about-thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+							<img src="assets/images/about/01.png" alt="about" class="img-fluid">
+						</div>
+						<a class="btn" href="#Portfolio"><span>Мое портфолио</span><img src="assets/images/icon/btn-1.png" alt="icon" class="img-fluid"></a>
+					</div>
+					<div class="about-right">
+						<div class="about-item">
+							<div class="title">
+								<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Давайте знакомиться</span>
+								<h2 class=" wow fadeInUp h3" data-wow-duration="1s" data-wow-delay=".2s">Меня зовут <span>Светлана Вартанова</span><br> UI/UX дизайнер и Web-разработчик </h2>
+								<p class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Разрабатываю сайты для малого, среднего и крупного бизнеса.<br>
+								Веду блог, пишу статьи о дизайне, интернет маркетинге, SEO и юзабилити.<br>
+								Считаю, что сайт должен выполнять поставленные задачи, быть удобен и эстетичен. Поэтому при проектировании дизайна, особое внимание уделяю структуре и логике взаимодействия. Люблю понятные интерфейсы, предпочитаю минимализм.</p>
+							</div>
+							<div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+								<h5>Навыки:</h5>
+								<ul>
+									<li>Знание принципoв дизaйна, таких кaк цвeтовая теoрия, типогрaфикa, кoмпoнoвка и визуальнaя иераpхия</li>
+									<li>Опыт работы с Figmа для создания макетов веб-страниц и пользовательских интерфейсов</li>
+									<li>Проектирование интерфейсов, которые хорошо работают на различных устройствах и разрешениях экрана</li>
+									<li>Умение собирать требования клиента и преобразовывать их в дизайн, который соответствует бизнес-целям</li>
+									<li>Способность эффективно работать с разработчиками и другими членами команды</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="sponsor wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="background-image: url(assets/images/sponsor/bg.png);">
+			<div class="container">
+				<div class="section-wrapper">
+					<div class="sponsor-slider">
+					    <div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/ps.svg" alt="sponsor">
+									<p>Photoshop</p>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/figma.svg" alt="sponsor">
+									<p>Figma</p>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/Principle.svg" alt="sponsor">
+									<p>Principle</p>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/Ai.svg" alt="sponsor">
+									<p>Illustrator</p>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/WordPress.svg" alt="sponsor">
+									<p>WordPress</p>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="sponsor-item">
+					      			<img src="assets/images/sponsor/06.png" alt="sponsor">
+									<p>Tilda</p>
+					      		</div>
+					      	</div>
+					    </div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="experience padding-tb" id="Resume" style="background-image: url(assets/images/exp/bg.png);">
+			<div class="container">
+				<div class="section-header">
+					<div class="title">
+						<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Образование и опыт</span>
+						<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s"><span>Дипломы и сертификаты</span> о прохождении различных курсов</h2>
+					</div>
+				</div>
+				<div class="section-wrapper">
+					<div class="exp-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="exp-inner">
+							<div class="exp-thumb">
+								<img src="assets/images/exp/01.png" alt="experience">
+								<h6>GeekBrains</h6>
+								<div class="exp-cata">
+									<span>2023</span>
+								</div>
+							</div>
+							<div class="exp-content">
+								<h3>Джуниор Frontend-разработчик</h3>
+							</div>
+						</div>
+					</div>
+					<div class="exp-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+						<div class="exp-inner">
+							<div class="exp-thumb">
+								<img src="assets/images/exp/02.png" alt="experience">
+								<h6>Result University</h6>
+								<div class="exp-cata">
+									<span>2023</span>
+								</div>
+							</div>
+							<div class="exp-content">
+								<h3>Марафон JavaScript</h3>
+							</div>
+						</div>
+					</div>
+					<div class="exp-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+						<div class="exp-inner">
+							<div class="exp-thumb">
+								<img src="assets/images/exp/01.png" alt="experience">
+								<h6>GeekBrains</h6>
+								<div class="exp-cata">
+									<span>2023</span>
+								</div>
+							</div>
+							<div class="exp-content">
+								<h3>Основы Веб-дизайна</h3>
+							</div>
+						</div>
+					</div>
+					<div class="exp-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+						<div class="exp-inner">
+							<div class="exp-thumb">
+								<img src="assets/images/exp/04.png" alt="experience">
+								<h6>Код будущего</h6>
+								<div class="exp-cata">
+									<span>2024</span>
+								</div>
+							</div>
+							<div class="exp-content">
+								<h3>Python-разработчик</h3>
+							</div>
+						</div>
+					</div>
+					<div class="exp-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+						<div class="exp-inner">
+							<div class="exp-thumb">
+								<img src="assets/images/exp/05.png" alt="experience">
+								<h6>Яндекс Практикум</h6>
+								<div class="exp-cata">
+									<span>2025 - </span>
+								</div>
+							</div>
+							<div class="exp-content">
+								<h3>Фулстек-разработчик</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services padding-tb" id="Services" style="background-image: url(assets/images/service/bg.png);">
+			<div class="container">
+				<div class="section-header">
+					<div class="title">
+						<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Услуги</span>
+						<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Работаю удаленно <span>по всему миру</span></h2>
+					</div>
+				</div>
+				<div class="section-wrapper">
+					<div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="service-inner">
+							<div class="service-content">
+								<h3>Дизайн сайтов</h3>
+								<p>Индивидуальное решение под ваши бизнес задачи. Дизайн на основе готового прототипа или вашего тех. задания.<br>Адаптивный дизайн сайтов для мобильных устройств.</p>
+							</div>
+							<div class="service-thumb">
+								<img src="assets/images/service/01.png" alt="services">
+							</div>
+						</div>
+					</div>
+					<div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+						<div class="service-inner">
+							<div class="service-content">
+								<h3>Редизайн сайтов</h3>
+								<p>Разработка нового дизайна для морально устаревших сайтов. Для сайтов, требующих расширения функционала. Для сайтов, изначально спроектированых неверно.</p>
+							</div>
+							<div class="service-thumb">
+								<img src="assets/images/service/02.png" alt="services">
+							</div>
+						</div>
+					</div>
+					<div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+						<div class="service-inner">
+							<div class="service-content">
+								<h3>SEO Оптимизация</h3>
+								<p>SEO-продвижение позволяет привлекать посетителей и увеличивать продажи. Знаю, как перевыполнить план по лидам, повысить конверсию и вывести ваш сайт в топ.</p>
+							</div>
+							<div class="service-thumb">
+								<img src="assets/images/service/03.png" alt="services">
+							</div>
+						</div>
+					</div>
+					<div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+						<div class="service-inner">
+							<div class="service-content">
+								<h3>Разработка сайтов</h3>
+								<p>Есть навыки и опыт в создании корпоративных сайтов и лендингов.<br>В этом случае, я веду проект полностью, от дизайна до публикации.</p>
+							</div>
+							<div class="service-thumb">
+								<img src="assets/images/service/04.png" alt="services">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio padding-tb" id="Portfolio">
+	    	<div class="container">
+	    		<div class="portfolio-top">
+					<div class="portfolio-left">
+						<div class="section-header">
+							<div class="title">
+								<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Мои работы</span>
+								<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Здесь представлены <span>мои лучшие работы</span> за последнее время</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+	    		<div class="section-wrapper">
+	    			<div class="grid wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+	    				<div class="grid-item g-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/01.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/01.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="grid-item g-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/02.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/02.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="grid-item v-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/03.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/03.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="grid-item g-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/04.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/04.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="grid-item g-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/06.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/06.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="grid-item v-img">
+		    				<div class="grid-inner">
+		    					<div class="thumb">
+		    						<a href="assets/images/portfolio/05.jpg" data-rel="lightcase:myCollection"><img src="assets/images/portfolio/05.jpg" alt="portfolio"></a>
+		    					</div>
+		    				</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+
+	    <section class="pricing padding-tb" id="Pricing" style="background-image: url(assets/images/pricing/bg.png);">
+	    	<div class="container">
+	    		<div class="section-header">
+	    			<div class="title">
+	    				<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Цены</span>
+	    				<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s"><span>Стоимость</span> зависит от количества уникальных страниц</h2>
+	    			</div>
+	    		</div>
+	    		<div class="section-wrapper">
+	    			<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+	    				<div class="pricing-inner">
+	    					<div class="pricing-content">
+	    						<div class="pricing-header">
+	    							<h3>Дизайн лендинга</h3>
+	    							<p>Дизайн на основе присланных вами материалов. Это могут быть как готовые тексты, так и набор различного текстового и медиа контента.</p>
+	    						</div>
+	    						<div class="pricing-body">
+	    							<div class="pricing-title">
+	    								<h3><span>От </span>5000<span> <i class="icofont-rouble"></i></span></h3>
+	    								<p>Ключевые этапы:</p>
+	    							</div>
+	    							<ul class="pricing-list">
+	    								<li>Изучение информации</li>
+	    								<li>Анализ конкурентов</li>
+	    								<li>Структурный прототип</li>
+	    								<li>Копирайтинг</li>
+	    								<li>Создание дизайна в Figma</li>
+	    								<li>Дизайн-макеты адаптивов</li>
+	    							</ul>
+	    							<div class="text-center">
+	    								<a href="#" class="btn">Заказать<i class="icofont-rounded-double-right"></i></a>
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+	    				<div class="pricing-inner">
+	    					<div class="pricing-content">
+	    						<div class="pricing-header">
+	    							<h3>Дизайн сайтов</h3>
+	    							<p>Уникальный и  эффективный  дизайн с учетом тематики, целевой аудитории вашего проекта и принципов юзабилити.</p>
+	    						</div>
+	    						<div class="pricing-body">
+	    							<div class="pricing-title">
+	    								<h3><span>От </span>10000<span> <i class="icofont-rouble"></i></span></h3>
+	    								<p>Ключевые этапы:</p>
+	    							</div>
+	    							<ul class="pricing-list">
+	    								<li>Изучение информации</li>
+	    								<li>Определение задач</li>
+	    								<li>Утверждение списка страниц</li>
+	    								<li>Копирайтинг</li>
+	    								<li>Создание дизайна в Figma</li>
+	    								<li>Дизайн-макеты адаптивов</li>
+	    							</ul>
+	    							<div class="text-center">
+	    								<a href="#" class="btn"><span>Заказать</span><i class="icofont-rounded-double-right"></i></a>
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+	    				<div class="pricing-inner">
+	    					<div class="pricing-content">
+	    						<div class="pricing-header">
+	    							<h3>Разработка сайтов</h3>
+	    							<p>Услуга для тех, кому нужен не просто дизайн макет, а полноценный сайт, которым вы сможете управлять самостоятельно.</p>
+	    						</div>
+	    						<div class="pricing-body">
+	    							<div class="pricing-title">
+	    								<h3><span>От </span>15000<span> <i class="icofont-rouble"></i></span></h3>
+	    								<p>Ключевые этапы:</p>
+	    							</div>
+	    							<ul class="pricing-list">
+	    								<li>Прототип</li>
+	    								<li>Дизайн</li>
+	    								<li>Верстка HTML/CSS WordPress</li>
+	    								<li>Установка на хостинг</li>
+	    								<li>Настройка</li>
+	    								<li>Наполнение</li>
+	    							</ul>
+	    							<div class="text-center">
+	    								<a href="#" class="btn"><span>Заказать</span><i class="icofont-rounded-double-right"></i></a>
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+
+	    <section class="testimonial padding-tb" id="Clients" style="background-image: url(assets/images/testimonial/bg.png);">
+			<div class="particles" id="particles-js2"></div>
+	    	<div class="container">
+	    		<div class="section-header">
+	    			<div class="title">
+	    				<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Отзывы</span>
+	    				<h2 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Последние отзывы <span>от моих клиентов</span></h2>
+	    			</div>
+	    		</div>
+	    		<div class="section-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+	    			<div class="testimonial-slider">
+	    				<div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="testimonial-item">
+					      			<div class="testimonial-inner">
+					      				<div class="testimonial-head">
+					      					<div class="testi-top">
+						      					<div class="testimonial-thumb">
+						      						<img src="assets/images/testimonial/01.png" alt="testimonial">
+						      					</div>
+						      					<div class="name-des">
+						      						<h5>Максим</h5>
+						      						<h6>Менеджер проекта</h6>
+						      					</div>
+						      				</div>
+					      					<img src="assets/images/testimonial/logo/01.png" alt="testimonial">
+					      				</div>
+					      				<div class="testimonial-body">
+					      					<p>Когда понадобился продающий сайт, то долго не думал к кому обратиться. С одним удаленным сотрудником работать проще, чем с крупной компанией.</p>
+											<p>Основные материалы я предоставил, а вот идей по дизайну у меня не было никаких, поэтому я отдал все на усмотрение мастера. Работа превзошла все мои ожидания! Светлана, спасибо!</p>
+					      				</div>
+					      				<div class="testimonial-footer">
+					      					<ul>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      					</ul>
+					      					<img src="assets/images/testimonial/logo/04.png" alt="testimonial">
+					      				</div>
+					      			</div>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="testimonial-item">
+					      			<div class="testimonial-inner">
+					      				<div class="testimonial-head">
+					      					<div class="testi-top">
+						      					<div class="testimonial-thumb">
+						      						<img src="assets/images/testimonial/02.png" alt="testimonial">
+						      					</div>
+						      					<div class="name-des">
+						      						<h5>Елена</h5>
+						      						<h6>Директор компании</h6>
+						      					</div>
+						      				</div>
+					      					<img src="assets/images/testimonial/logo/02.png" alt="testimonial">
+					      				</div>
+					      				<div class="testimonial-body">
+					      					<p>Наша фирма занимается ремонтом и отделкой жилых и коммерческих помещений. К Светлане мы обратились по совету знакомых коллег. И не пожалели! Лендинг выполнен качественно, дизайн стильный и современный. Но самое главное, после настройки Яндекс Директ, количество заказов на услуги увеличилось в 2, 5 раза!</p>
+					      				</div>
+					      				<div class="testimonial-footer">
+					      					<ul>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      					</ul>
+					      					<img src="assets/images/testimonial/logo/04.png" alt="testimonial">
+					      				</div>
+					      			</div>
+					      		</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="testimonial-item">
+					      			<div class="testimonial-inner">
+					      				<div class="testimonial-head">
+					      					<div class="testi-top">
+						      					<div class="testimonial-thumb">
+						      						<img src="assets/images/testimonial/03.png" alt="testimonial">
+						      					</div>
+						      					<div class="name-des">
+						      						<h5>Валерий</h5>
+						      						<h6>Директор компании</h6>
+						      					</div>
+					      					</div>
+					      					<img src="assets/images/testimonial/logo/03.png" alt="testimonial">
+					      				</div>
+					      				<div class="testimonial-body">
+					      					<p>Когда понадобился продающий сайт, то долго не думал к кому обратиться. С одним удаленным сотрудником работать проще, чем с крупной компанией.</p>
+											<p>Основные материалы я предоставил, а вот идей по дизайну у меня не было никаких, поэтому я отдал все на усмотрение мастера. Работа превзошла все мои ожидания! Светлана, спасибо!</p>
+					      				</div>
+					      				<div class="testimonial-footer">
+					      					<ul>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      						<li><i class="icofont-ui-rate-blank"></i></li>
+					      					</ul>
+					      					<img src="assets/images/testimonial/logo/04.png" alt="testimonial">
+					      				</div>
+					      			</div>
+					      		</div>
+					      	</div>
+				      	</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+
+	    <section class="blog padding-tb" id="Blog">
+	    	<div class="container">
+	    		<div class="blog-header-part">
+		    		<div class="section-header">
+		    			<div class="title">
+		    				<span class="category wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Блог</span>
+		    				<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Новые статьи <span>в блоге</span></h2>
+		    			</div>
+		    		</div>
+		    		<a href="#" class="btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><span>Все статьи</span><i class="icofont-double-right"></i></a>
+		    	</div>
+	    		<div class="section-wrapper">
+	    			<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+	    				<div class="post-inner">
+	    					<div class="post-thumb">
+	    						<a href="#"><img src="assets/images/blog/02.jpeg" alt="blog"></a>
+	    					</div>
+	    					<div class="post-content">
+								<ul class="content-left">
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/01.png" alt="blog"></a>
+										<p>04</p>
+										<ul class="social-media-list">
+											<li>
+												<a href="#" class="facebook"><i class="icofont-telegram"></i></a>
+											</li>
+											<li>
+												<a href="#" class="twitter"><i class="icofont-vk"></i></a>
+											</li>
+											<li>
+												<a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/02.png" alt="icon"></a>
+										<p>15</p>
+									</li>
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/03.png" alt="icon"></a>
+										<p>12</p>
+									</li>
+								</ul>
+								<div class="content-part">
+									<div class="entry-header">
+										<div class="entry-meta">
+											<p class="byline">
+												<i class="icofont-user-alt-7"></i> <a href="#">Светлана Вартанова</a>
+											</p>
+											<p class="posted-on">
+												<i class="icofont-calendar"></i> <a href="#">22.01.2025</a>
+											</p>
+										</div>
+										<h3><a href="#">Почему красивый дизайн сайта — это не роскошь, а необходимость</a></h3>
+									</div>
+									<div class="entry-content">
+										<p>Привет. В мире, где буквально каждая компания стремится заявить о себе в интернете, сайт стал лицом бизнеса. Представьте: вы заходите на сайт, чтобы узнать больше о товаре или...</p>
+										<a href="#" class="btn">Читать дальше <i class="icofont-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+	    				</div>
+	    			</div>
+	    			<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+	    				<div class="post-inner">
+	    					<div class="post-thumb">
+	    						<a href="#"><img src="assets/images/blog/01.jpg" alt="blog"></a>
+	    					</div>
+	    					<div class="post-content">
+								<ul class="content-left">
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/01.png" alt="blog"></a>
+										<p>04</p>
+										<ul class="social-media-list">
+											<li>
+												<a href="#" class="facebook"><i class="icofont-telegram"></i></a>
+											</li>
+											<li>
+												<a href="#" class="twitter"><i class="icofont-vk"></i></a>
+											</li>
+											<li>
+												<a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/02.png" alt="icon"></a>
+										<p>15</p>
+									</li>
+									<li>
+										<a href="#"><img src="assets/images/blog/icon/03.png" alt="icon"></a>
+										<p>12</p>
+									</li>
+								</ul>
+								<div class="content-part">
+									<div class="entry-header">
+										<div class="entry-meta">
+											<p class="byline">
+												<i class="icofont-user-alt-7"></i> <a href="#">Светлана Вартанова</a>
+											</p>
+											<p class="posted-on">
+												<i class="icofont-calendar"></i> <a href="#">22.01.2025</a>
+											</p>
+										</div>
+										<h3><a href="blog.html">SEO дизайн сайта или что должен знать дизайнер кроме дизайна</a></h3>
+									</div>
+									<div class="entry-content">
+										<p>На днях в одном дизайнерском чате девушка задала вопрос. Должен ли дизайнер разбираться в SEO и как помочь клиенту правильно продумать сайт? Изначально клиент хотел лендинг...</p>
+										<a href="#" class="btn">Читать дальше <i class="icofont-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+
+	    <section class="contact padding-tb" id="Contact" style="background-image: url(assets/images/contact/bg.png);">
+	    	<div class="container">
+	    		<div class="section-wrapper">
+	    			<section class="banner-bottom">
+						<div class="bottom-wrapper">
+							<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="post-thumb">
+							<i class="icon icofont-telegram"></i>
+						</div>
+						<div class="post-content">
+							<h5>Telegram</h5>
+							<h5><span>@lanavartanova</span></h5>
+						</div>
+					</div>
+					<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+						<div class="post-thumb">
+							<i class="icon icofont-ui-email"></i>
+						</div>
+						<div class="post-content">
+							<h5>E-mail</h5>
+							<h5><span>lanavartanova@mail.com</span></h5>
+						</div>
+					</div>
+					<div class="post-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="post-thumb">
+							<i class="icon icofont-instagram"></i>
+						</div>
+						<div class="post-content">
+							<h5>Instagram</h5>
+							<h5><span>@lanaweb</span></h5>
+						</div>
+					</div>
+						</div>
+					</section>
+	    			<form>
+		    			<div class="row">
+		    				<div class="col-sm-6">
+		    					<div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+		    						<input type="text" name="name" placeholder="Ваше имя*">
+		    					</div>
+		    					<div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+		    						<input type="email" name="email" placeholder="Ваш Email*">
+		    					</div>
+		    					<div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+		    						<input type="text" placeholder="Тема сообщения*">
+		    					</div>
+		    				</div>
+		    				<div class="col-sm-6">
+		    					<div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+		    						<textarea placeholder="Сообщение" rows="4"></textarea>
+		    					</div>
+		    					<div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+		    						<a href="#" class="btn"><span>Отправить</span><img src="assets/images/icon/btn-2.png" alt="icon" class="img-fluid"></a>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</form>
+	    		</div>
+	    	</div>
+	    </section>
+    </div>
+    <!-- box lay out end -->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="text-center">
+	    		<a href="index.html" class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s"><img src="assets/images/logo/logo.png" class="header-logo" alt="footer"></a>
+	    		<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+	    			&copy; 2025. Designed By <a href="#">Lana Vartanova</a>
+	    		</p>
+	    		<ul class="social-link-list wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+	    			<li>
+	    				<a href="#"><i class="icofont-whatsapp"></i></a>
+	    			</li>
+	    			<li>
+	    				<a href="#"><i class="icofont-instagram"></i></a>
+	    			</li>
+	    			<li>
+	    				<a href="#"><i class="icofont-odnoklassniki"></i></a>
+	    			</li>
+	    			<li>
+	    				<a href="#"><i class="icofont-skype"></i></a>
+	    			</li>
+	    			<li>
+	    				<a href="#"><i class="icofont-vk"></i></a>
+	    			</li>
+	    		</ul>
+	    	</div>
+    	</div>
+    </div>
+
+    <!-- scrollToTop start here -->
+	<a href="#" class="scrollToTop"><i class="icofont-double-left"></i></a>
+	<!-- scrollToTop ending here -->
+
+
+  	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/snap.svg-min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/main3.js"></script>
+  	<script src="assets/js/bootstrap.min.js"></script>
+  	<script src="assets/js/particle.js"></script>
+  	<script src="assets/js/swiper.min.js"></script>
+  	<script src="assets/js/lightcase.js"></script>
+  	<script src="assets/js/waypoints.min.js"></script>
+  	<script src="assets/js/isotope.pkgd.min.js"></script>
+  	<script src="assets/js/functions.js"></script>
+  	<script src="assets/js/wow.min.js"></script>
+    <!-- Theia Post Slider -->
+    <script src="assets/js/theia-sticky-sidebar.js"></script>
+</body>
 </html>
